@@ -1,0 +1,17 @@
+GOAL : To find the future sales or demand.
+
+TYPE: REGRESSION MODEL.
+VISUALIZATIONS: true.
+
+PROLEMS:
+1. The UCI dataset was in xlsx format, it has to be converted into .csv format.
+sol: There is a function in pandas called "read_xl". And then I used "to_csv" 
+When I tried to do it, there were some permission errors. So I chose to eport the present file as .csv.
+
+2. The UCI dataset is not encoded in standard in utf-8 format. 
+sol: The parameter encoding is to be set to some other type. In this case it is set to "Latin1" aka "ISO-8859-1".
+
+3. The data distribution is not at all Ideal.	
+
+STEPS: The invoice column has 'c' showing that they were cancelled.
+-> It would be better to  create a column called "Cancelled" which tells you the whether it is cancelled or not.
